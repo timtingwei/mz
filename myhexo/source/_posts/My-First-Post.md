@@ -2,10 +2,11 @@
 title: My First Post
 date: 2017-11-21 13:31:03
 tags: "markdown"
+categories: 
 
 ---
 
-------
+
 In this post, I will focus on use of Markdown and hexo push.
  
 > 1. title level
@@ -16,11 +17,11 @@ In this post, I will focus on use of Markdown and hexo push.
 > 6. bold fonts
 > 7. reference
 > 8. edit a formula
-> 9.draw a flow picture
+> 9. draw a flow picture
 
 reference website: [Cmd Markdown reader](https://www.zybuluo.com/mdeditor#fn:latex)
 
-------
+
 
 ## 1. Title level
 
@@ -80,9 +81,9 @@ int main() {
 - [ ] second todo
 - [x] third todo -> Done
 
-## 5. insert a note"[^code]"
-LaTex formula support[^LaTex]
-high light code[^code]
+## 5. insert a note[^code]
+LaTex formula support [LaTex][^LaTex]
+high light code [code][^code]
 insert a web note [MathJax][1]
 
 ## 6. bold fonts
@@ -101,7 +102,7 @@ $$E=mc^2$$    use $$
 
 ## 9.draw a flow picture
 
-'''flow
+```flow
 st=>start: Start
 op=>operation: Your Opreation
 cond=>condition: Yes or No?
@@ -110,6 +111,7 @@ e=>end
 st->op->cond
 cond(yes)->e
 cond(no)->op
+```
 
 [^LaTex]: support **LaTex** edit and display, such as: $\sum_{i=1}^n a_i=0$, visit [MathJax][1] for more information.
 [^code]: include Java, Python, JavaScript etc.
